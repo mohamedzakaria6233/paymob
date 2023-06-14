@@ -11,10 +11,10 @@ app.use(bodyparser.json())
 app.use(cors())
 
 app.get('/',async(req,res)=>{
-  res.send("ok")
+  console.log("get",res)
 })
 app.post('/',async(req,res)=>{
-console.log(res)
+console.log("post",res)
 
 })
 
