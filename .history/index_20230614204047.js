@@ -3,7 +3,7 @@ const app=express()
 const port=3300
 app.get("/",(req,res)=>{
   
- res.send(req.query)
+ res.send(res)
 
 })
 // app.post("/",(req,res)=>{

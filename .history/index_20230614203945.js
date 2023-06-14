@@ -3,7 +3,7 @@ const app=express()
 const port=3300
 app.get("/",(req,res)=>{
   
- res.send(req.query)
+ res.send(window.location.href)
 
 })
 // app.post("/",(req,res)=>{
@@ -12,5 +12,6 @@ app.get("/",(req,res)=>{
 // })
 app.listen(port,()=>{
     console.log("server is run ........... ")
+    res.send("hello")
 })
 
