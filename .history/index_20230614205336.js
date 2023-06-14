@@ -7,7 +7,7 @@ app.get("/",(req,res)=>{
 
 })
 app.post("/",(req,res)=>{
-res.send(req)
+res.send(res)
   
 })
 app.listen(port,()=>{
