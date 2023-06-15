@@ -35,11 +35,11 @@ app.use(cors())
 console.log("hello")
 
 app.get("/",(req,res)=>{
-  res.send(req.body)
+  res.send("hello wordld")
 })
 app.post("/",(req,res)=>{
   const pay=collection(db,"paymob")
-  addDoc(pay,{ak:JSON.stringify(req.body)})
+  addDoc(pay,{ak:req.body})
 
   
 })
