@@ -1,6 +1,6 @@
 const express=require('express')
 const app=express()
-const port=process.env.PORT
+const port=2666
 const bodyparser=require('body-parser')
 const cors=require('cors')
 // app.get("/",(req,res)=>{
