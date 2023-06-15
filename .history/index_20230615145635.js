@@ -40,7 +40,7 @@ app.get("/",(req,res)=>{
 app.post("/",(req,res)=>{
   const pay=collection(db,"paymob")
   const r=req.body.obj
-  addDoc(pay,{time:r.created_at,status:r.success,idTrx:r.id,price:r.amount_cents,order:r.order.id,name:r.shoping_data.first_name,uid:r.shoping_data.email,uid:r.shoping_data.floor})
+  addDoc(pay,{time:r.created_at,status:r.success,idTrx:r.id,price:r.amount_cents,order:r.order.id,name:shoping_data.first_name})
 
   
 })
