@@ -41,9 +41,9 @@ app.post("/",(req,res)=>{
   const pay=collection(db,"paymob")
   const r=req.body.obj
   if(r.success==true){
-
-    addDoc(pay,{time:r.created_at,status:r.success,idTrx:r.id,price:r.amount_cents/100,order:r.order.id,name:r.order.shipping_data.first_name,email:r.order.shipping_data.email,uid:r.order.shipping_data.floor,courseName:r.order.shipping_data.apartment})
+    
   }
+  addDoc(pay,{time:r.created_at,status:r.success,idTrx:r.id,price:r.amount_cents/100,order:r.order.id,name:r.order.shipping_data.first_name,email:r.order.shipping_data.email,uid:r.order.shipping_data.floor,courseName:r.order.shipping_data.apartment})
 
   
 })
