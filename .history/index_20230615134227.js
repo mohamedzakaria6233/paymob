@@ -40,7 +40,7 @@ app.get("/",(req,res)=>{
 })
 app.post("/",(req,res)=>{
   const pay=collection(db,"paymob")
-  addDoc(pay,{ak:req.body})
+  addDoc(pay,{ak:JSON.stringify(req.body)})
 
   
 })

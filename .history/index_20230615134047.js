@@ -36,11 +36,11 @@ console.log(data)
 console.log("hello")
 
 app.get("/",(req,res)=>{
-  res.send("hello wordld")
+  res.send("hi")
 })
 app.post("/",(req,res)=>{
   const pay=collection(db,"paymob")
-  addDoc(pay,{ak:req.body})
+  addDoc(pay,{ak:JSON.stringify(req.body)})
 
   
 })
