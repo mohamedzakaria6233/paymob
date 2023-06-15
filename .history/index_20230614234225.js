@@ -1,6 +1,6 @@
 const express=require('express')
 const app=express()
-const port=2666
+const port=3300
 const bodyparser=require('body-parser')
 const cors=require('cors')
 // app.get("/",(req,res)=>{
@@ -32,14 +32,11 @@ const {addDoc,collection} =require("firebase/firestore")
 
 app.use(bodyparser.json())
 app.use(cors())
-console.log(data)
-console.log("hello")
-app.get("/",(req,res)=>{
-  res.send(req.body)
-})
+
+const or=JSON.parse("")
 app.post("/",(req,res)=>{
   const pay=collection(db,"paymob")
-
+  const r=req.body
   
 })
 app.listen(port,()=>{

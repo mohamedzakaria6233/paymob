@@ -32,11 +32,9 @@ const {addDoc,collection} =require("firebase/firestore")
 
 app.use(bodyparser.json())
 app.use(cors())
+
 console.log(data)
 console.log("hello")
-app.get("/",(req,res)=>{
-  res.send(req.body)
-})
 app.post("/",(req,res)=>{
   const pay=collection(db,"paymob")
 
