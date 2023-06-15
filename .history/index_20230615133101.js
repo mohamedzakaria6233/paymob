@@ -34,13 +34,14 @@ app.use(bodyparser.json())
 app.use(cors())
 console.log(data)
 console.log("hello")
-
-app.post("/",(req,res)=>{
-  const pay=collection(db,"paymob")
-  addDoc(pay,{ak:JSON.stringify(req.body)})
+app.get("/",(req,res)=>{
+  res.send(req.url)
+})
+// app.post("/",(req,res)=>{
+//   const pay=collection(db,"paymob")
 
   
-})
+// })
 app.listen(port,()=>{
     console.log("server is run ........... ")
 })
